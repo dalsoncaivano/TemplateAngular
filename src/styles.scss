@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+@use "sass:map";
+
+@import "primeflex/primeflex.scss";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: var(--surface-ground, #f5f5f5);
+}
+
+.container {
+  margin: 0 auto;
+  padding: 1.5rem;
+  max-width: 1200px;
+}
+
+/* Ajustes do banner */
+.hero-banner {
+  border-radius: 1rem;
+  overflow: hidden;
+}

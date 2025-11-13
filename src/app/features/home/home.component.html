@@ -1,0 +1,45 @@
+<div class="container">
+  <app-banner></app-banner>
+
+  <div class="mt-4">
+    <p-card header="Comece sua jornada" subheader="Recursos e destaques">
+      <ng-template pTemplate="header">
+        <div class="flex align-items-center gap-2">
+          <i class="pi pi-compass"></i>
+          <span class="text-xl font-semibold">Comece sua jornada</span>
+        </div>
+      </ng-template>
+
+      <div class="grid">
+        <div class="col-12 md:col-4">
+          <div class="p-3 surface-card border-round shadow-1">
+            <div class="flex align-items-center gap-2 mb-2">
+              <i class="pi pi-bolt"></i><strong>Rápido</strong>
+            </div>
+            <p class="m-0">Componentes prontos com PrimeNG e utilitários do PrimeFlex.</p>
+          </div>
+        </div>
+        <div class="col-12 md:col-4">
+          <div class="p-3 surface-card border-round shadow-1">
+            <div class="flex align-items-center gap-2 mb-2">
+              <i class="pi pi-mobile"></i><strong>Responsivo</strong>
+            </div>
+            <p class="m-0">Layout fluido que se adapta do mobile ao desktop.</p>
+          </div>
+        </div>
+        <div class="col-12 md:col-4">
+          <div class="p-3 surface-card border-round shadow-1">
+            <div class="flex align-items-center gap-2 mb-2">
+              <i class="pi pi-moon"></i><strong>Tema dinâmico</strong>
+            </div>
+            <p class="m-0">Alternância entre claro e escuro com um clique.</p>
+          </div>
+        </div>
+      </div>
+
+      <ng-template pTemplate="footer">
+        <button pButton label="Saiba mais" icon="pi pi-arrow-right"></button>
+      </ng-template>
+    </p-card>
+  </div>
+</div>
