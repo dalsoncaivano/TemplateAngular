@@ -1,0 +1,49 @@
+:host {
+  display: block;
+}
+
+.app-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 4rem;
+}
+
+:host ::ng-deep .header-toolbar {
+  padding: 0 !important;
+  background-color: #000;
+  border: none;
+  color: #fff;
+}
+
+:host ::ng-deep .header-toolbar .p-toolbar-group-left,
+:host ::ng-deep .header-toolbar .p-toolbar-group-right {
+  color: inherit;
+}
+
+:host ::ng-deep .header-menubar {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+:host ::ng-deep .header-menubar .p-menubar-root-list,
+:host ::ng-deep .header-menubar .p-submenu-list {
+  background-color: transparent;
+}
+
+:host ::ng-deep .header-menubar .p-menuitem-content,
+:host ::ng-deep .header-menubar .p-menuitem-link {
+  background-color: transparent !important;
+  color: #fff;
+  font-weight: 500;
+}
+
+:host ::ng-deep .header-menubar .p-menuitem.p-highlight > .p-menuitem-content {
+  background-color: transparent !important;
+  box-shadow: none;
+}

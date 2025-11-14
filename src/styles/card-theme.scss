@@ -1,0 +1,29 @@
+:root {
+  --card-font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans",
+    "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+
+  /* Override PrimeNG theme defaults so no Inter font download is required */
+  font-family: var(--card-font-family);
+  --font-family: var(--card-font-family);
+}
+
+/* Ensures PrimeNG cards always inherit the unified typography stack */
+.p-card {
+  font-family: var(--card-font-family);
+}
+
+.p-card .p-component,
+.p-card .p-button,
+.p-card .p-card-title,
+.p-card .p-card-subtitle,
+.p-card .p-card-content,
+.p-card .p-card-body,
+.p-card .p-card-footer,
+.p-card p,
+.p-card span,
+.p-card strong,
+.p-card em {
+  font-family: var(--card-font-family);
+  font-weight: 100;
+}

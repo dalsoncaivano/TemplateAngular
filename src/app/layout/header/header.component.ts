@@ -14,6 +14,15 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     this.items = [
       {
+        label: 'Componentes',
+        items: [
+          {
+            label: 'Cards',
+            routerLink: '/componentes/cards/templates'
+          }
+        ]
+      },
+      {
         label: 'Sobre',
         items: [{ label: 'A equipe', routerLink: '/sobre/equipe' }]
       }
@@ -36,12 +45,16 @@ export class HeaderComponent implements OnInit {
     }
 
     const themeLink = document.getElementById('app-theme') as HTMLLinkElement | null;
-    if (!themeLink) {
-      return;
+    if (themeLink) {
+      themeLink.href = this.dark
+        ? 'assets/themes/lara-dark-blue/theme.css'
+        : 'assets/themes/lara-light-blue/theme.css';
     }
 
-    themeLink.href = this.dark
-      ? 'assets/themes/lara-dark-blue/theme.css'
-      : 'assets/themes/lara-light-blue/theme.css';
+    const body = document.body;
+    if (body) {
+      body.classList.remove('light-theme', 'dark-theme');
+      body.classList.add(this.dark ? 'dark-theme' : 'light-theme');
+    }
   }
 }
