@@ -19,6 +19,7 @@ import { HomeComponent } from './features/home/home.component';
 import { BannerComponent } from './shared/banner/banner.component';
 import { EquipeComponent } from './features/sobre/equipe/equipe.component';
 import { TemplateCardsComponent } from './features/componentes/template-cards/template-cards.component';
+import { TemplateButtonsComponent } from './features/componentes/template-buttons/template-buttons.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { TemplateCardsComponent } from './features/componentes/template-cards/te
     HomeComponent,
     BannerComponent,
     EquipeComponent,
-    TemplateCardsComponent
+    TemplateCardsComponent,
+    TemplateButtonsComponent
   ],
   imports: [
     BrowserModule,
