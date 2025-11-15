@@ -23,6 +23,10 @@ export class HeaderComponent implements OnInit {
           {
             label: 'Botões',
             routerLink: '/componentes/botoes/templates'
+          },
+          {
+            label: 'Tables',
+            routerLink: '/componentes/tables/templates'
           }
         ]
       },

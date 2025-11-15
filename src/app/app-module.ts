@@ -11,6 +11,7 @@ import { MenubarModule } from 'primeng/menubar';
 import { TieredMenuModule } from 'primeng/tieredmenu';
 import { ToggleButtonModule } from 'primeng/togglebutton';
 import { ToolbarModule } from 'primeng/toolbar';
+import { TableModule } from 'primeng/table';
 
 import { AppRoutingModule } from './app-routing-module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { BannerComponent } from './shared/banner/banner.component';
 import { EquipeComponent } from './features/sobre/equipe/equipe.component';
 import { TemplateCardsComponent } from './features/componentes/template-cards/template-cards.component';
 import { TemplateButtonsComponent } from './features/componentes/template-buttons/template-buttons.component';
+import { TemplateTableComponent } from './features/componentes/template-table/template-table.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { TemplateButtonsComponent } from './features/componentes/template-button
     BannerComponent,
     EquipeComponent,
     TemplateCardsComponent,
-    TemplateButtonsComponent
+    TemplateButtonsComponent,
+    TemplateTableComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +47,7 @@ import { TemplateButtonsComponent } from './features/componentes/template-button
     CardModule,
     ButtonModule,
     DividerModule,
+    TableModule,
     AppRoutingModule
   ],
   providers: [
