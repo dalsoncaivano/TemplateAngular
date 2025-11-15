@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PaginatorState } from 'primeng/paginator';
 
 interface Product {
   code: string;
@@ -22,4 +23,16 @@ export class TemplateTableComponent {
     { code: 'h456wer53', name: 'Bracelet', category: 'Accessories', quantity: 73 },
     { code: 'av2231fwg', name: 'Brown Purse', category: 'Accessories', quantity: 0 }
   ];
+
+  first = 0;
+  rows = 5;
+
+  get visibleProducts(): Product[] {
+    return this.products.slice(this.first, this.first + this.rows);
+  }
+
+  onPageChange(event: PaginatorState): void {
+    this.first = event.first ?? 0;
+    this.rows = event.rows ?? this.rows;
+  }
 }

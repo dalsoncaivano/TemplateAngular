@@ -1,7 +1,7 @@
 @use "sass:map";
 @use "./styles/card-theme";
-
-@import "primeflex/primeflex.scss";
+@use "./styles/tables";
+@use "primeflex/primeflex" as *;
 
 html,
 body {

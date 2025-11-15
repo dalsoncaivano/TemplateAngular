@@ -12,6 +12,7 @@ import { TieredMenuModule } from 'primeng/tieredmenu';
 import { ToggleButtonModule } from 'primeng/togglebutton';
 import { ToolbarModule } from 'primeng/toolbar';
 import { TableModule } from 'primeng/table';
+import { PaginatorModule } from 'primeng/paginator';
 
 import { AppRoutingModule } from './app-routing-module';
 import { AppComponent } from './app.component';
@@ -48,6 +49,7 @@ import { TemplateTableComponent } from './features/componentes/template-table/te
     ButtonModule,
     DividerModule,
     TableModule,
+    PaginatorModule,
     AppRoutingModule
   ],
   providers: [
