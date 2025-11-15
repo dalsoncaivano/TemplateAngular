@@ -18,7 +18,7 @@ import { HeaderComponent } from './layout/header/header.component';
 import { HomeComponent } from './features/home/home.component';
 import { BannerComponent } from './shared/banner/banner.component';
 import { EquipeComponent } from './features/sobre/equipe/equipe.component';
-import { TemplateCardsComponent } from './features/cards/template-cards/template-cards.component';
+import { TemplateCardsComponent } from './features/componentes/template-cards/template-cards.component';
 
 @NgModule({
   declarations: [
