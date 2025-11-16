@@ -47,12 +47,17 @@ font-weight: 100;
 }
 
 .p-datatable .p-button.p-button-sm {
-  padding: 0.20rem 0.75rem;
+  padding: 0.5rem 0.75rem;
 }
 
 .p-datatable .p-button.p-button-icon-only {
   width: 2rem;
   min-width: 2rem;
+  font-size: 0; /* hides text */
+}
+
+.p-datatable .p-button.p-button-sm .p-button-icon {
+  font-size: 0.7rem !important;
 }
 
 .table-template-page .table-panel__cta {

@@ -56,7 +56,7 @@ export class HeaderComponent implements OnInit {
     if (themeLink) {
       themeLink.href = this.dark
         ? 'assets/themes/lara-dark-blue/theme.css'
-        : 'assets/themes/lara-light-blue/theme.css';
+        : 'assets/themes/custom-light/theme.css';
     }
 
     const body = document.body;
