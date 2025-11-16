@@ -10,6 +10,49 @@
       scelerisque.
     </p>
 
+    <div class="table-filters">
+      <div class="table-filters__group">
+        <label for="filter-manager">Gerente</label>
+        <select id="filter-manager" class="table-filters__control">
+          <option>Todos</option>
+          <option>Gerente 01</option>
+          <option>Gerente 02</option>
+        </select>
+      </div>
+
+      <div class="table-filters__group">
+        <label for="filter-student">Aluno</label>
+        <input
+          id="filter-student"
+          class="table-filters__control"
+          type="text"
+          placeholder="Buscar por aluno"
+        />
+      </div>
+
+      <div class="table-filters__group">
+        <label for="filter-access">Último acesso</label>
+        <select id="filter-access" class="table-filters__control">
+          <option>Todos</option>
+          <option>Últimos 7 dias</option>
+          <option>Últimos 30 dias</option>
+        </select>
+      </div>
+
+      <div class="table-filters__group">
+        <label for="filter-cert">Certificação</label>
+        <select id="filter-cert" class="table-filters__control">
+          <option>aws certified cloud practitioner</option>
+          <option>aws associate</option>
+          <option>aws developer</option>
+        </select>
+      </div>
+
+      <div class="table-filters__actions">
+        <button pButton type="button" icon="pi pi-filter-slash" label="Limpar"></button>
+      </div>
+    </div>
+
     <p-table
       [value]="visibleProducts"
       responsiveLayout="scroll"
