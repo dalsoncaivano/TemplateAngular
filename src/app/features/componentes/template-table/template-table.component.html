@@ -1,7 +1,10 @@
 <div class="table-template-page">
 
   <div class="table-panel">
-    <h2>Título do formulário</h2>
+    <div class="table-panel__header">
+      <h2>Título do formulário</h2>
+      <button pButton type="button" label="Cadastrar"></button>
+    </div>
     <p class="table-panel__subtitle">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum justo a pretium
       scelerisque.
@@ -18,6 +21,7 @@
           <th>Name</th>
           <th>Category</th>
           <th>Quantity</th>
+          <th class="actions-col-header">Ações</th>
         </tr>
       </ng-template>
       <ng-template pTemplate="body" let-product>
@@ -26,6 +30,26 @@
           <td>{{ product.name }}</td>
           <td>{{ product.category }}</td>
           <td>{{ product.quantity }}</td>
+          <td class="actions-col">
+            <button
+              pButton
+              type="button"
+              icon="pi pi-eye"
+              class="p-button-sm action-edit"
+            ></button>
+            <button
+              pButton
+              type="button"
+              icon="pi pi-pencil"
+              class="p-button-sm action-edit"
+            ></button>
+            <button
+              pButton
+              type="button"
+              icon="pi pi-trash"
+              class="p-button-sm action-delete"
+            ></button>
+          </td>
         </tr>
       </ng-template>
     </p-table>

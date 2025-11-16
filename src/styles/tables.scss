@@ -1,3 +1,98 @@
 .p-datatable .p-datatable-tbody > tr > td {
   padding: 0.5rem 1rem;
 }
+
+.p-datatable,
+.p-datatable .p-datatable-tbody > tr > td {
+  font-weight: 100;
+}
+
+.p-datatable .p-datatable-thead > tr > th {
+  font-weight: 700;
+  color: #6b7280;
+  padding: 0.5rem 1rem;
+
+}
+
+.table-template-page {
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.table-panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.table-panel h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.table-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.table-panel__subtitle {
+  margin: 0 0 0.7rem;
+  color: #475569;
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.actions-col {
+  text-align: right;
+  white-space: nowrap;
+  width: 1%;
+
+  .p-button {
+    margin-left: 0.25rem;
+  }
+}
+
+.actions-col-header {
+  text-align: center;
+  width: 1%;
+}
+
+p-paginator {
+  display: block;
+  margin-top: 1rem;
+  --paginator-padding: 0.25rem 0.5rem;
+}
+
+p-paginator ::ng-deep {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+p-paginator ::ng-deep .p-paginator-rpp-options {
+  margin-right: auto;
+  align-items: center;
+}
+
+p-paginator ::ng-deep .p-paginator-rpp-options .p-dropdown {
+  height: 2rem;
+}
+
+p-paginator ::ng-deep .p-paginator-rpp-options .p-dropdown .p-dropdown-label {
+  padding: 0.25rem 0.75rem;
+}
+
+p-paginator ::ng-deep .p-paginator {
+  padding: var(--paginator-padding);
+  justify-content: center;
+  flex: 1;
+}

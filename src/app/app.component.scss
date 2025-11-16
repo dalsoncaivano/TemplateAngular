@@ -10,8 +10,10 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 2rem 4rem;
+  padding: 2rem;
   background: transparent;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .hero-section {
