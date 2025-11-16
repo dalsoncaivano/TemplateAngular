@@ -10,7 +10,7 @@
       scelerisque.
     </p>
 
-    <div class="table-filters">
+    <div class="table-filters table-filters--inline">
       <div class="table-filters__group">
         <label for="filter-manager">Gerente</label>
         <select id="filter-manager" class="table-filters__control">
@@ -30,25 +30,7 @@
         />
       </div>
 
-      <div class="table-filters__group">
-        <label for="filter-access">Último acesso</label>
-        <select id="filter-access" class="table-filters__control">
-          <option>Todos</option>
-          <option>Últimos 7 dias</option>
-          <option>Últimos 30 dias</option>
-        </select>
-      </div>
-
-      <div class="table-filters__group">
-        <label for="filter-cert">Certificação</label>
-        <select id="filter-cert" class="table-filters__control">
-          <option>aws certified cloud practitioner</option>
-          <option>aws associate</option>
-          <option>aws developer</option>
-        </select>
-      </div>
-
-      <div class="table-filters__actions">
+      <div class="table-filters__actions table-filters__actions--inline">
         <button pButton type="button" icon="pi pi-filter-slash" label="Limpar"></button>
       </div>
     </div>

@@ -75,7 +75,7 @@
 .table-template-page .table-filters__control {
   border: 1px solid #dfe7ef;
   border-radius: 0.75rem;
-  padding: 0.65rem 0.85rem;
+  padding: 0.7rem 1.1rem;
   font-size: 0.9rem;
   font-weight: 500;
   background-color: #ffffff;
@@ -95,10 +95,21 @@
   grid-column: 1 / -1;
 }
 
+.table-template-page .table-filters--inline {
+  grid-template-columns: 1fr 1fr auto;
+  align-items: end;
+}
+
+.table-template-page .table-filters__actions--inline {
+  align-items: flex-end;
+  justify-content: flex-end;
+  grid-column: auto;
+}
+
 .table-template-page .table-panel__cta {
   position: absolute;
   right: 0;
-  top: -2rem;
+  top: 50%;
   transform: translateY(-50%);
   z-index: 2;
 }
