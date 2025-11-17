@@ -36,13 +36,13 @@ export class HeaderComponent implements OnInit {
       }
     ];
 
-    const savedTheme = localStorage.getItem('theme') || 'light';
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const savedTheme = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
     this.dark = savedTheme === 'dark';
     this.applyTheme();
   }
 
   toggleTheme(): void {
-    this.dark = !this.dark;
     localStorage.setItem('theme', this.dark ? 'dark' : 'light');
     this.applyTheme();
   }
