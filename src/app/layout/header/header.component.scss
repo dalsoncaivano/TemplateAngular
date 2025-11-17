@@ -35,19 +35,43 @@
   box-shadow: none;
 }
 
-:host ::ng-deep .header-menubar .p-menubar-root-list,
+:host ::ng-deep .header-menubar .p-menubar-root-list {
+  background-color: #050505;
+  border-radius: 0;
+  padding: 0;
+}
+
 :host ::ng-deep .header-menubar .p-submenu-list {
-  background-color: #0c0d1a;
+  background-color: #050505;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 :host ::ng-deep .header-menubar .p-menuitem-content,
 :host ::ng-deep .header-menubar .p-menuitem-link {
-  background-color: transparent !important;
-  color: #fff;
+  background-color: #050505 !important;
+  color: #929292;
   font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+:host ::ng-deep .header-menubar .p-menuitem .p-menuitem-link .p-menuitem-text,
+:host ::ng-deep .header-menubar .p-menuitem .p-menuitem-link .p-menuitem-icon,
+:host ::ng-deep .header-menubar .p-menuitem .p-menuitem-link .p-submenu-icon {
+  color: inherit !important;
+}
+
+:host ::ng-deep .header-menubar .p-menuitem-link:not(.p-disabled):hover,
+:host ::ng-deep .header-menubar .p-menuitem-link:focus {
+  color: #ff5315 !important;
+}
+
+:host ::ng-deep .p-togglebutton .p-button,
+:host ::ng-deep .p-togglebutton .p-button .p-button-icon {
+  color: #929292 !important;
 }
 
 :host ::ng-deep .header-menubar .p-menuitem.p-highlight > .p-menuitem-content {
-  background-color: transparent !important;
+  background-color: rgba(255, 255, 255, 0.08) !important;
   box-shadow: none;
 }
