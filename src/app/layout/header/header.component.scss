@@ -10,7 +10,7 @@
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-  margin-left: 4rem;
+  margin-left: 2rem;
 }
 
 :host ::ng-deep .header-toolbar {
@@ -25,6 +25,10 @@
   color: inherit;
 }
 
+:host ::ng-deep .header-toolbar .p-toolbar-group-right {
+  padding-right: 2rem;
+}
+
 :host ::ng-deep .header-menubar {
   background-color: transparent;
   border: none;
@@ -33,7 +37,7 @@
 
 :host ::ng-deep .header-menubar .p-menubar-root-list,
 :host ::ng-deep .header-menubar .p-submenu-list {
-  background-color: transparent;
+  background-color: #0c0d1a;
 }
 
 :host ::ng-deep .header-menubar .p-menuitem-content,
