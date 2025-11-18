@@ -1,6 +1,7 @@
 .home-hero {
   width: 100%;
   background: linear-gradient(90deg, rgba(255, 226, 169, 0.4) 0%, rgba(137, 186, 177, 0.35) 100%);
+  padding-bottom: 2rem;
 }
 
 .home-hero__inner {
@@ -49,4 +50,64 @@
     max-width: 520px;
     height: auto;
   }
+}
+
+.home-card-sample {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 3rem;
+
+  @media (min-width: 920px) {
+    justify-content: flex-start;
+    padding-left: 4rem;
+  }
+}
+
+:host ::ng-deep .home-card {
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.12);
+  border: none;
+  border-radius: 1.25rem;
+}
+
+:host ::ng-deep .home-card .p-card-body {
+  padding: 1.5rem;
+}
+
+:host ::ng-deep .home-card p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.home-card__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding: 1.5rem 1.5rem 0;
+
+  h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #0f172a;
+  }
+
+  p {
+    margin: 0;
+    color: #64748b;
+    font-size: 0.95rem;
+  }
+}
+
+.home-card__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background-color: #1f2544;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
 }
