@@ -37,4 +37,21 @@
       </p-organizationChart>
     </section>
   </div>
+
+  <section class="team-cards" aria-label="Destaques da equipe">
+    <p-card
+      *ngFor="let card of teamCards"
+      [style]="{ width: '100%', overflow: 'hidden' }"
+      styleClass="advanced-card team-card"
+    >
+      <ng-template pTemplate="header">
+        <img [alt]="card.title" class="w-full card-hero" [src]="card.image" />
+      </ng-template>
+
+      <ng-template pTemplate="title">{{ card.title }}</ng-template>
+      <ng-template pTemplate="subtitle">{{ card.subtitle }}</ng-template>
+
+      <p>{{ card.description }}</p>
+    </p-card>
+  </section>
 </div>

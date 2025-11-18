@@ -10,6 +10,29 @@ import { TreeNode } from 'primeng/api';
 export class EquipeComponent implements OnInit {
   orgNodes: TreeNode[] = [];
   selectedNodes: TreeNode[] = [];
+  teamCards = [
+    {
+      title: 'Trilhas formativas',
+      subtitle: 'Conteúdo aplicável',
+      description:
+        'Percursos pensados para acompanhar cada etapa da jornada, conectando fundamentos e desafios reais.',
+      image: 'https://primefaces.org/cdn/primeng/images/card-ng.jpg'
+    },
+    {
+      title: 'Laboratórios abertos',
+      subtitle: 'Projetos orientados',
+      description:
+        'Ambientes para experimentar e construir soluções com apoio de especialistas e metodologias ágeis.',
+      image: 'https://primefaces.org/cdn/primeng/images/card-ng.jpg'
+    },
+    {
+      title: 'Mentorias contínuas',
+      subtitle: 'Evolução guiada',
+      description:
+        'Acompanhamento personalizado que incentiva a autonomia, feedbacks frequentes e plano de crescimento.',
+      image: 'https://primefaces.org/cdn/primeng/images/card-ng.jpg'
+    }
+  ];
 
   ngOnInit(): void {
     this.orgNodes = [

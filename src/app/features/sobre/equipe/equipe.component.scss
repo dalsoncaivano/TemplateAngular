@@ -29,7 +29,7 @@
   justify-content: center;
   padding: 1rem;
   border-radius: 1.5rem;
-}
+  }
 
 :host ::ng-deep .orgchart-selection .p-organizationchart {
   width: 100%;
@@ -80,4 +80,27 @@
   border-radius: 1rem;
   background-color: rgba(99, 102, 241, 0.15);
   color: #312e81;
+}
+
+.team-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+:host ::ng-deep .team-card {
+  border-radius: 1.25rem;
+  box-shadow: 0 20px 35px rgba(15, 23, 42, 0.12);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+:host ::ng-deep .team-card .p-card-title {
+  font-size: 1.15rem;
+}
+
+.card-hero {
+  max-height: 160px;
+  object-fit: cover;
 }
