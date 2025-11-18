@@ -13,6 +13,7 @@ import { ToggleButtonModule } from 'primeng/togglebutton';
 import { ToolbarModule } from 'primeng/toolbar';
 import { TableModule } from 'primeng/table';
 import { PaginatorModule } from 'primeng/paginator';
+import { OrganizationChartModule } from 'primeng/organizationchart';
 
 import { AppRoutingModule } from './app-routing-module';
 import { AppComponent } from './app.component';
@@ -23,6 +24,7 @@ import { EquipeComponent } from './features/sobre/equipe/equipe.component';
 import { TemplateCardsComponent } from './features/componentes/template-cards/template-cards.component';
 import { TemplateButtonsComponent } from './features/componentes/template-buttons/template-buttons.component';
 import { TemplateTableComponent } from './features/componentes/template-table/template-table.component';
+import { OrgchartComponent } from './features/orgchart/orgchart.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,8 @@ import { TemplateTableComponent } from './features/componentes/template-table/te
     EquipeComponent,
     TemplateCardsComponent,
     TemplateButtonsComponent,
-    TemplateTableComponent
+    TemplateTableComponent,
+    OrgchartComponent
   ],
   imports: [
     BrowserModule,
@@ -50,6 +53,7 @@ import { TemplateTableComponent } from './features/componentes/template-table/te
     DividerModule,
     TableModule,
     PaginatorModule,
+    OrganizationChartModule,
     AppRoutingModule
   ],
   providers: [

@@ -1,0 +1,21 @@
+:host ::ng-deep .orgchart-demo .p-organizationchart {
+  width: 100%;
+  justify-content: center;
+}
+
+:host ::ng-deep .orgchart-demo .p-organizationchart-node-content {
+  border-radius: 0.75rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(15, 23, 42, 0.2);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+}
+
+:host ::ng-deep .orgchart-demo .p-organizationchart-line-down {
+  background-color: rgba(15, 23, 42, 0.2);
+}
+
+:host ::ng-deep .orgchart-demo .p-organizationchart-line-left,
+:host ::ng-deep .orgchart-demo .p-organizationchart-line-right,
+:host ::ng-deep .orgchart-demo .p-organizationchart-line-top {
+  border-color: rgba(15, 23, 42, 0.2);
+}

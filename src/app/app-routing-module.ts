@@ -5,11 +5,13 @@ import { EquipeComponent } from './features/sobre/equipe/equipe.component';
 import { TemplateCardsComponent } from './features/componentes/template-cards/template-cards.component';
 import { TemplateButtonsComponent } from './features/componentes/template-buttons/template-buttons.component';
 import { TemplateTableComponent } from './features/componentes/template-table/template-table.component';
+import { OrgchartComponent } from './features/orgchart/orgchart.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'componentes/cards/templates', component: TemplateCardsComponent },
   { path: 'componentes/botoes/templates', component: TemplateButtonsComponent },
+  { path: 'componentes/orgchart', component: OrgchartComponent },
   { path: 'componentes/tables/templates', component: TemplateTableComponent },
   { path: 'sobre/equipe', component: EquipeComponent },
   { path: '**', redirectTo: '' }

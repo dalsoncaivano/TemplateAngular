@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+﻿import { Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 
 @Component({
@@ -16,18 +16,10 @@ export class HeaderComponent implements OnInit {
       {
         label: 'Componentes',
         items: [
-          {
-            label: 'Cards',
-            routerLink: '/componentes/cards/templates'
-          },
-          {
-            label: 'Botões',
-            routerLink: '/componentes/botoes/templates'
-          },
-          {
-            label: 'Tables',
-            routerLink: '/componentes/tables/templates'
-          }
+          { label: 'Cards', routerLink: '/componentes/cards/templates' },
+          { label: 'Botões', routerLink: '/componentes/botoes/templates' },
+          { label: 'Organograma', routerLink: '/componentes/orgchart' },
+          { label: 'Tables', routerLink: '/componentes/tables/templates' }
         ]
       },
       {
