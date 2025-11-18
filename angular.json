@@ -1,9 +1,9 @@
-{
+﻿{
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "landing-primeng": {
+    "centrodeformacao": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -89,10 +89,10 @@
           },
           "configurations": {
             "production": {
-              "buildTarget": "landing-primeng:build:production"
+              "buildTarget": "centrodeformacao:build:production"
             },
             "development": {
-              "buildTarget": "landing-primeng:build:development"
+              "buildTarget": "centrodeformacao:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -144,3 +144,4 @@
     "analytics": false
   }
 }
+
