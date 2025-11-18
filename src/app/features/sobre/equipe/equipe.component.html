@@ -1,4 +1,4 @@
-<div class="container equipe-container">
+﻿<div class="container equipe-container">
   <h2 class="mt-3">Quem somos</h2>
 
   <div class="team-content">
@@ -45,13 +45,29 @@
       styleClass="advanced-card team-card"
     >
       <ng-template pTemplate="header">
-        <img [alt]="card.title" class="w-full card-hero" [src]="card.image" />
+        <img
+          [alt]="card.title"
+          class="w-full card-hero"
+          [ngClass]="{ 'card-hero--rodrigo': card.title === 'Rodrigo Monteiro' }"
+          [src]="card.image"
+        />
       </ng-template>
 
       <ng-template pTemplate="title">{{ card.title }}</ng-template>
       <ng-template pTemplate="subtitle">{{ card.subtitle }}</ng-template>
 
       <p>{{ card.description }}</p>
+
+      <a
+        *ngIf="card.linkedin"
+        class="linkedin-link"
+        [href]="card.linkedin"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="linkedin-link__badge">in</span>
+        <span>LinkedIn</span>
+      </a>
     </p-card>
   </section>
 </div>

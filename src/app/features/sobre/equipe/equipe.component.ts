@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+﻿import { Component, OnInit } from '@angular/core';
 import { TreeNode } from 'primeng/api';
 
 @Component({
@@ -12,25 +12,28 @@ export class EquipeComponent implements OnInit {
   selectedNodes: TreeNode[] = [];
   teamCards = [
     {
-      title: 'Trilhas formativas',
-      subtitle: 'Conteúdo aplicável',
+      title: 'Dalson Caivano',
+      subtitle: 'Coordenador',
       description:
-        'Percursos pensados para acompanhar cada etapa da jornada, conectando fundamentos e desafios reais.',
-      image: 'https://primefaces.org/cdn/primeng/images/card-ng.jpg'
+        'Além de coordenar o time de formação, atua também como instrutor de COBOL. Possui experiência como desenvolvedor e coordenador em fábrica de software, além de ter exercido a função de analista de sistemas. Já atuou como PO em projetos.',
+      image: 'assets/images/gerais/Dalson.jpg',
+      linkedin: 'https://www.linkedin.com/in/dalson-dos-anjos-caivano-9a44742b'
     },
     {
-      title: 'Laboratórios abertos',
-      subtitle: 'Projetos orientados',
+      title: 'Nicholas Fuchs',
+      subtitle: 'Instrutor Java',
       description:
-        'Ambientes para experimentar e construir soluções com apoio de especialistas e metodologias ágeis.',
-      image: 'https://primefaces.org/cdn/primeng/images/card-ng.jpg'
+        'Enorme experiência técnica em desenvolvimento de sistemas inclusive como Tech Lead.',
+      image: 'https://primefaces.org/cdn/primeng/images/card-ng.jpg',
+      linkedin: 'https://www.linkedin.com/in/nicholas-fuchs-1a65678b/'
     },
     {
-      title: 'Mentorias contínuas',
-      subtitle: 'Evolução guiada',
+      title: 'Rodrigo Monteiro',
+      subtitle: 'Instrutor BD e Lógica',
       description:
-        'Acompanhamento personalizado que incentiva a autonomia, feedbacks frequentes e plano de crescimento.',
-      image: 'https://primefaces.org/cdn/primeng/images/card-ng.jpg'
+        'Ampla experiência no setor acadêmico, atuando em diversas disciplinas. Especialista em banco de dados e lógica de Programação.',
+      image: 'assets/images/gerais/RodrigoMonteiro.jpg',
+      linkedin: 'https://www.linkedin.com/in/rodrigo-monteiro-697b0452/'
     }
   ];
 
