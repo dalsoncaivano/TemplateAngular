@@ -22,6 +22,10 @@
   justify-content: stretch;
 }
 
+.page-body.page-body--flush {
+  padding: 0;
+}
+
 .hero-section {
   width: 100%;
   padding: 4rem clamp(2rem, 6vw, 6rem);
