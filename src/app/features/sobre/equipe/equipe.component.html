@@ -1,4 +1,40 @@
-<div class="container">
-  <h2 class="mt-3">Nossa equipe</h2>
-  <p>Conteúdo institucional em breve.</p>
+<div class="container equipe-container">
+  <h2 class="mt-3">Quem somos</h2>
+
+  <div class="team-content">
+    <section class="team-description">
+      <p>
+        Somos um departamento dedicado a transformar o ensino de Programação em uma experiência prática, envolvente e
+        acessível. Nosso trabalho une rigor acadêmico e vivência profissional, sempre com o compromisso de aproximar
+        teoria e prática.
+      </p>
+      <p>
+        Atuamos com metodologias modernas, valorizando a clareza, a evolução gradativa do aluno e a conexão com as
+        demandas reais do mercado. Mais do que ensinar tecnologia, nossa missão é preparar pessoas para crescerem com
+        segurança e consistência.
+      </p>
+    </section>
+
+    <section class="team-organograma" aria-label="Organograma da equipe">
+      <p-organizationChart
+        [value]="orgNodes"
+        selectionMode="multiple"
+        [(selection)]="selectedNodes"
+        styleClass="orgchart-selection"
+      >
+        <ng-template let-node pTemplate="person">
+          <div class="org-person">
+            <div class="org-person__name">{{ node.data?.name }}</div>
+            <span class="org-person__title">{{ node.data?.title }}</span>
+          </div>
+        </ng-template>
+
+        <ng-template let-node pTemplate="department">
+          <div class="org-department">
+            {{ node.label }}
+          </div>
+        </ng-template>
+      </p-organizationChart>
+    </section>
+  </div>
 </div>

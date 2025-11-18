@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { TreeNode } from 'primeng/api';
 
 @Component({
   selector: 'app-equipe',
@@ -6,4 +7,70 @@ import { Component } from '@angular/core';
   templateUrl: './equipe.component.html',
   styleUrls: ['./equipe.component.scss']
 })
-export class EquipeComponent {}
+export class EquipeComponent implements OnInit {
+  orgNodes: TreeNode[] = [];
+  selectedNodes: TreeNode[] = [];
+
+  ngOnInit(): void {
+    this.orgNodes = [
+      {
+        label: 'Nível 1',
+        type: 'person',
+        styleClass: 'orgchart-person',
+        expanded: true,
+        data: {
+          name: 'Rogério Pinto',
+          title: 'Diretor'
+        },
+        children: [
+          {
+            label: 'Nível 2',
+            type: 'person',
+            expanded: true,
+            data: {
+              name: 'Bruno Amaral',
+              title: 'Gerente'
+            },
+            children: [
+              {
+                label: 'Nível 3',
+                type: 'person',
+                expanded: true,
+                data: {
+                  name: 'Dalson Caivano',
+                  title: 'Coordenador'
+                },
+                children: [
+                  {
+                    label: 'Nível 3.1',
+                    type: 'person',
+                    data: {
+                      name: 'Dalson Caivano',
+                      title: 'Instrutor COBOL'
+                    }
+                  },
+                  {
+                    label: 'Nível 3.2',
+                    type: 'person',
+                    data: {
+                      name: 'Rodrigo Monteiro',
+                      title: 'Instrutor Lógica e BD'
+                    }
+                  },
+                  {
+                    label: 'Nível 3.3',
+                    type: 'person',
+                    data: {
+                      name: 'Nicholas Fuchs',
+                      title: 'Instrutor Java'
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ];
+  }
+}
