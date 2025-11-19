@@ -1,0 +1,83 @@
+.card-icon__icon {
+  --card-icon-size: 56px;
+  --card-icon-radius: 16px;
+  --card-icon-bg: #1f2544;
+  --card-icon-color: #ffffff;
+  --card-icon-font-size: 1.5rem;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--card-icon-size);
+  height: var(--card-icon-size);
+  border-radius: var(--card-icon-radius);
+  background-color: var(--card-icon-bg);
+  color: var(--card-icon-color);
+  font-size: var(--card-icon-font-size);
+  line-height: 1;
+  flex-shrink: 0;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+}
+.card-icon__icon--primary {
+  --card-icon-bg: #1f2544;
+  --card-icon-color: #ffffff;
+}
+
+.home-card-sample {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1rem 3rem;
+
+  @media (min-width: 920px) {
+    justify-content: flex-start;
+    padding-left: 4rem;
+  }
+}
+
+.card-icon {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.12);
+  border: none;
+  border-radius: 1.25rem;
+}
+
+.card-icon h4 {
+  font-style: italic;
+  font-weight: 100;
+}
+
+.card-icon p {
+  font-weight: 100;
+}
+
+.card-icon__body {
+  padding: 1.5rem;
+}
+
+.card-icon__body p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.card-icon__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 1.5rem 0;
+
+  h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #0f172a;
+  }
+
+  h4 {
+    margin: 0;
+    color: #64748b;
+    font-size: 0.95rem;
+    font-style: italic;
+  }
+}
