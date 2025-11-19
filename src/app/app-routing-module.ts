@@ -5,7 +5,7 @@ import { EquipeComponent } from './features/sobre/equipe/equipe.component';
 import { TemplateCardsComponent } from './features/componentes/template-cards/template-cards.component';
 import { TemplateButtonsComponent } from './features/componentes/template-buttons/template-buttons.component';
 import { TemplateTableComponent } from './features/componentes/template-table/template-table.component';
-import { OrgchartComponent } from './features/orgchart/orgchart.component';
+import { OrgchartComponent } from './features/componentes/orgchart/orgchart.component';
 import { CursosComponent } from './features/cursos/cursos.component';
 
 const routes: Routes = [

@@ -33,6 +33,7 @@
   background-color: transparent;
   border: none;
   box-shadow: none;
+  position: relative;
 }
 
 :host ::ng-deep .header-menubar .p-menubar-root-list {
@@ -107,4 +108,32 @@
 :host ::ng-deep .header-menubar .p-menuitem.p-highlight > .p-menuitem-content {
   background-color: rgba(255, 255, 255, 0.08) !important;
   box-shadow: none;
+}
+
+:host ::ng-deep .header-menubar.p-menubar-mobile-active .p-menubar-root-list {
+  width: min(80vw, 18rem);
+  right: 0;
+  left: auto;
+  z-index: 1000;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.25);
+}
+
+:host ::ng-deep .header-menubar.p-menubar-mobile .p-submenu-list {
+  position: static;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  padding-left: 1rem;
+  background-color: #050505;
+}
+
+:host-context(.light-theme)
+  ::ng-deep
+  .header-menubar.p-menubar-mobile
+  .p-submenu-list {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
