@@ -1,0 +1,18 @@
+<p-galleria
+  [value]="images"
+  [showThumbnails]="false"
+  [showIndicators]="true"
+  [circular]="true"
+  [autoPlay]="true"
+  [transitionInterval]="4500"
+  [containerStyle]="{ 'max-width': '1200px' }"
+  class="hero-banner"
+>
+  <ng-template pTemplate="item" let-item>
+    <img
+      [src]="item.itemImageSrc"
+      [alt]="item.alt || item.title"
+      style="width: 100%; display: block"
+    />
+  </ng-template>
+</p-galleria>

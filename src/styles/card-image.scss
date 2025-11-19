@@ -1,0 +1,82 @@
+:root {
+  --card-font-family: var(
+    --app-font-family,
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    'Noto Sans',
+    'Liberation Sans',
+    Arial,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol',
+    'Noto Color Emoji'
+  );
+
+  /* Override PrimeNG theme defaults so no Inter font download is required */
+  font-family: var(--card-font-family);
+  --font-family: var(--card-font-family);
+}
+
+/* Ensures PrimeNG cards always inherit the unified typography stack */
+.p-card-image {
+  font-family: var(--card-font-family);
+}
+
+.p-card-image .p-component,
+.p-card-image .p-card-title,
+.p-card-image .p-card-subtitle,
+.p-card-image .p-card-content,
+.p-card-image .p-card-body,
+.p-card-image .p-card-footer,
+.p-card-image p,
+.p-card-image span,
+.p-card-image strong,
+.p-card-image em {
+  font-family: var(--card-font-family);
+  font-weight: 100;
+}
+
+.team-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.card-image {
+  border-radius: 1.25rem;
+  box-shadow: 0 20px 35px rgba(15, 23, 42, 0.12);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.card-image .p-card-title {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.card-hero {
+  width: 100%;
+  max-width: 350px;
+  max-height: 250px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+body.dark-theme .equipe-container .team-card-image .p-card-title,
+body.dark-theme .equipe-container .team-card-image h3 {
+  color: #44547c;
+}
+
+body.dark-theme .equipe-container .team-card-image .p-card-subtitle,
+body.dark-theme .equipe-container .team-card-image h4 {
+  color: #7b8da9;
+  font-style: italic;
+}

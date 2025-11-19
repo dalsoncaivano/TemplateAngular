@@ -1,0 +1,185 @@
+.table-template-page {
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  flex: 1;
+  position: relative;
+}
+
+.table-template-page .p-datatable .p-datatable-tbody > tr > td {
+  padding: 0.5rem 1rem;
+  font-weight: 100;
+}
+
+.table-template-page .p-datatable .p-datatable-thead > tr > th {
+  font-weight: 700;
+  color: #6b7280;
+  padding: 0.5rem 1rem;
+}
+
+.table-template-page .table-panel {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1.5rem;
+  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+  padding: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.table-template-page .table-panel h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.table-template-page .table-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 0.2rem;
+  padding-right: 9rem;
+}
+
+.table-template-page .table-panel__subtitle {
+  margin: 0 0 0.7rem;
+  color: #475569;
+  font-weight: 100;
+  font-size: 13px;
+}
+
+.table-template-page .table-filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.table-template-page .table-filters__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.table-template-page .table-filters__group label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #475569;
+}
+
+.table-template-page .table-filters__control {
+  border: 1px solid #dfe7ef;
+  border-radius: 0.75rem;
+  padding: 0.7rem 1.1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+.table-template-page .table-filters__control:focus {
+  outline: none;
+  border-color: #94a3b8;
+  box-shadow: 0 0 0 2px rgba(148, 163, 184, 0.25);
+}
+
+.table-template-page .table-filters__actions {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  grid-column: 1 / -1;
+}
+
+.table-template-page .table-filters--inline {
+  grid-template-columns: 1fr 1fr auto;
+  align-items: end;
+}
+
+.table-template-page .table-filters__actions--inline {
+  align-items: flex-end;
+  justify-content: flex-end;
+  grid-column: auto;
+}
+
+.table-template-page .table-panel__cta {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.table-template-page .actions-col {
+  text-align: right;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.table-template-page .actions-col .p-button {
+  margin-left: 0.25rem;
+}
+
+.table-template-page .actions-col-header {
+  text-align: center;
+  width: 1%;
+}
+
+.table-template-page p-paginator {
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.table-template-page p-paginator .p-paginator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0.25rem !important;
+  min-height: 1.9rem !important;
+  border-radius: 1rem;
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
+.table-template-page .p-paginator .p-paginator-first,
+.table-template-page .p-paginator .p-paginator-prev,
+.table-template-page .p-paginator .p-paginator-next,
+.table-template-page .p-paginator .p-paginator-last,
+.table-template-page .p-paginator .p-paginator-pages .p-paginator-page {
+  width: 1.6rem;
+  height: 1.6rem;
+  min-width: 1.6rem;
+  line-height: 1.6rem;
+  border-radius: 999px;
+  margin: 0 0.1rem;
+  font-size: 0.85rem;
+}
+
+.table-template-page .p-paginator .p-paginator-rpp-options {
+  margin-right: auto;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.table-template-page .p-paginator .p-paginator-rpp-options .p-dropdown {
+  height: 2rem !important;
+  min-height: 2rem !important;
+  line-height: 2rem !important;
+  margin: 0 0.5rem !important;
+}
+
+.table-template-page
+  .p-paginator
+  .p-paginator-rpp-options
+  .p-dropdown
+  .p-dropdown-label {
+  padding: 0 0.6rem !important;
+  line-height: 2rem !important;
+  font-size: 0.85rem;
+}

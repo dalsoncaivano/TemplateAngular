@@ -1,0 +1,30 @@
+﻿<section class="home-hero">
+  <div class="home-hero__inner">
+    <div class="home-hero__text">
+      <h2>Reduza o gap entre teoria e pratica, avance no seu aprendizado</h2>
+      <p>
+        Cursos preparados para alinhar conhecimento academico e demandas do mercado, tornando seu aprendizado mais
+        relevante!
+      </p>
+    </div>
+
+    <div class="home-hero__image">
+      <img src="assets/banner/imagem001.png" alt="Ilustração de pessoas aprendendo e desenvolvendo" />
+    </div>
+  </div>
+</section>
+
+<section class="home-card-sample">
+  <div class="card-icon" *ngFor="let card of cards">
+    <div class="card-icon__header">
+      <span class="card-icon__icon card-icon__icon--primary" [ngClass]="card.icon"></span>
+      <div>
+        <h3>{{ card.title }}</h3>
+        <h4>{{ card.subtitle }}</h4>
+      </div>
+    </div>
+    <div class="card-icon__body">
+      <p>{{ card.description }}</p>
+    </div>
+  </div>
+</section>

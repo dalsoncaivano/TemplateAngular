@@ -1,0 +1,17 @@
+<p-toolbar class="shadow-2" styleClass="header-toolbar">
+  <div class="p-toolbar-group-left flex align-items-center gap-2">
+    <a class="app-title" routerLink="/">CentroDeForma&ccedil;&atilde;o</a>
+  </div>
+
+  <div class="p-toolbar-group-right flex align-items-center gap-3">
+    <p-menubar [model]="items" styleClass="header-menubar border-none"></p-menubar>
+    <p-toggleButton
+      [onLabel]="''"
+      [offLabel]="''"
+      onIcon="pi pi-moon"
+      offIcon="pi pi-sun"
+      [(ngModel)]="dark"
+      (onChange)="toggleTheme()"
+    ></p-toggleButton>
+  </div>
+</p-toolbar>
