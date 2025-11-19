@@ -28,3 +28,134 @@
   align-items: center;
   justify-content: center;
 }
+:host ::ng-deep .table-template-page {
+  padding: 2rem;
+  background-color: #f4f7fb;
+  border-radius: 1.5rem;
+}
+
+:host ::ng-deep .table-template-page .table-panel {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 25px 40px rgba(15, 23, 42, 0.08);
+}
+
+:host ::ng-deep .table-template-page .table-panel__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+:host ::ng-deep .table-template-page h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #0f172a;
+}
+
+:host ::ng-deep .table-template-page .table-panel__subtitle {
+  margin: 0.5rem 0 1.5rem;
+  color: #64748b;
+}
+
+:host ::ng-deep .table-template-page .table-filters {
+  background: #f9fbff;
+  border-radius: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+:host ::ng-deep .table-template-page .table-filters__control {
+  width: 100%;
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  background: #fff;
+  font-size: 1rem;
+}
+
+:host ::ng-deep .table-template-page .table-panel__cta.p-button {
+  background: #111633;
+  border: none;
+  padding: 0.65rem 1.75rem;
+  border-radius: 0.8rem;
+}
+
+:host ::ng-deep .table-template-page .table-panel__cta.p-button:hover {
+  background: #ff5315;
+}
+
+:host ::ng-deep .table-template-page .p-datatable .p-datatable-thead > tr > th {
+  background: #f8fafc;
+  color: #475569;
+  border: none;
+  padding: 1rem;
+  font-weight: 700;
+}
+
+:host ::ng-deep .table-template-page .p-datatable .p-datatable-tbody > tr > td {
+  border-color: #e2e8f0;
+  padding: 1rem;
+  color: #1f2937;
+}
+
+:host ::ng-deep .table-template-page .actions-col button {
+  margin-right: 0.35rem;
+}
+
+:host ::ng-deep .table-template-page .actions-col button:last-child {
+  margin-right: 0;
+}
+
+:host ::ng-deep .table-template-page .p-button.action-edit,
+:host ::ng-deep .table-template-page .p-button.action-delete {
+  background: #0c0f23;
+  border: none;
+  width: 2.1rem;
+  height: 2.1rem;
+}
+
+:host ::ng-deep .table-template-page .p-button.action-edit:hover,
+:host ::ng-deep .table-template-page .p-button.action-delete:hover {
+  background: #ff5315;
+}
+
+:host ::ng-deep .table-template-page .p-datatable-striped .p-datatable-tbody > tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+:host ::ng-deep .table-template-page .p-paginator {
+  border: none;
+  padding: 1.25rem 0 0;
+  background: transparent;
+  display: flex;
+  justify-content: flex-end;
+}
+
+:host ::ng-deep .table-template-page .p-paginator .p-paginator-first,
+:host ::ng-deep .table-template-page .p-paginator .p-paginator-prev,
+:host ::ng-deep .table-template-page .p-paginator .p-paginator-next,
+:host ::ng-deep .table-template-page .p-paginator .p-paginator-last,
+:host ::ng-deep .table-template-page .p-paginator .p-paginator-page {
+  border: none;
+  border-radius: 0.5rem;
+  margin: 0 0.15rem;
+  color: #0f172a;
+}
+
+:host ::ng-deep .table-template-page .p-paginator .p-paginator-page.p-highlight {
+  background: #111633;
+  color: #fff;
+}
+
+:host ::ng-deep .table-template-page .p-paginator .p-paginator-page:not(.p-highlight):hover,
+:host ::ng-deep .table-template-page .p-paginator .p-paginator-first:hover,
+:host ::ng-deep .table-template-page .p-paginator .p-paginator-prev:hover,
+:host ::ng-deep .table-template-page .p-paginator .p-paginator-next:hover,
+:host ::ng-deep .table-template-page .p-paginator .p-paginator-last:hover {
+  background: rgba(17, 22, 51, 0.1);
+}
