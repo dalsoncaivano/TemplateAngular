@@ -78,6 +78,17 @@
   color: #0f172a;
 }
 
+:host-context(.dark-theme) ::ng-deep .header-menubar .p-submenu-list {
+  background-color: #050505;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.45);
+}
+
+:host-context(.dark-theme) ::ng-deep .header-menubar .p-submenu-list .p-menuitem-link {
+  background-color: #050505 !important;
+  color: #d1d5db;
+}
+
 :host ::ng-deep .header-menubar .p-menuitem .p-menuitem-link .p-menuitem-text,
 :host ::ng-deep .header-menubar .p-menuitem .p-menuitem-link .p-menuitem-icon,
 :host ::ng-deep .header-menubar .p-menuitem .p-menuitem-link .p-submenu-icon {
@@ -100,9 +111,18 @@
   color: #ff5315 !important;
 }
 
-:host ::ng-deep .p-togglebutton .p-button,
-:host ::ng-deep .p-togglebutton .p-button .p-button-icon {
-  color: #929292 !important;
+:host ::ng-deep .header-toolbar .p-togglebutton.p-button {
+  color: #fff !important;
+}
+
+:host ::ng-deep .header-toolbar .p-togglebutton.p-button .p-button-icon,
+:host ::ng-deep .header-toolbar .p-togglebutton.p-button .pi {
+  color: #fff !important;
+  opacity: 1 !important;
+}
+
+:host ::ng-deep .header-toolbar .p-togglebutton.p-button .pi::before {
+  color: inherit !important;
 }
 
 :host ::ng-deep .header-menubar .p-menuitem.p-highlight > .p-menuitem-content {
