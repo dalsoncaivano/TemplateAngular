@@ -6,9 +6,11 @@ import { TemplateCardsComponent } from './features/componentes/template-cards/te
 import { TemplateButtonsComponent } from './features/componentes/template-buttons/template-buttons.component';
 import { TemplateTableComponent } from './features/componentes/template-table/template-table.component';
 import { OrgchartComponent } from './features/orgchart/orgchart.component';
+import { CursosComponent } from './features/cursos/cursos.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  { path: 'cursos', component: CursosComponent },
   { path: 'componentes/cards/templates', component: TemplateCardsComponent },
   { path: 'componentes/botoes/templates', component: TemplateButtonsComponent },
   { path: 'componentes/orgchart', component: OrgchartComponent },

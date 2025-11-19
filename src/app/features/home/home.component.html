@@ -15,19 +15,16 @@
 </section>
 
 <section class="home-card-sample">
-  <div class="card-icon">
+  <div class="card-icon" *ngFor="let card of cards">
     <div class="card-icon__header">
-      <span class="card-icon__icon card-icon__icon--primary pi pi-book"></span>
+      <span class="card-icon__icon card-icon__icon--primary" [ngClass]="card.icon"></span>
       <div>
-        <h3>Experiência guiada</h3>
-        <h4>Formato modular</h4>
+        <h3>{{ card.title }}</h3>
+        <h4>{{ card.subtitle }}</h4>
       </div>
     </div>
     <div class="card-icon__body">
-      <p>
-        Conteúdos objetivos e presença constante de instrutores para reduzir o intervalo entre teoria e prática enquanto
-        você desenvolve projetos reais.
-      </p>
+      <p>{{ card.description }}</p>
     </div>
   </div>
 </section>

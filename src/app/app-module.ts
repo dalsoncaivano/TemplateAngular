@@ -25,6 +25,7 @@ import { TemplateCardsComponent } from './features/componentes/template-cards/te
 import { TemplateButtonsComponent } from './features/componentes/template-buttons/template-buttons.component';
 import { TemplateTableComponent } from './features/componentes/template-table/template-table.component';
 import { OrgchartComponent } from './features/orgchart/orgchart.component';
+import { CursosComponent } from './features/cursos/cursos.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { OrgchartComponent } from './features/orgchart/orgchart.component';
     TemplateCardsComponent,
     TemplateButtonsComponent,
     TemplateTableComponent,
-    OrgchartComponent
+    OrgchartComponent,
+    CursosComponent
   ],
   imports: [
     BrowserModule,
