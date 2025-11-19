@@ -1,5 +1,4 @@
-﻿import { Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -8,30 +7,9 @@ import { MenuItem } from 'primeng/api';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  items: MenuItem[] = [];
   dark = false;
 
   ngOnInit(): void {
-    this.items = [
-      {
-        label: 'Cursos',
-        routerLink: '/cursos'
-      },
-      {
-        label: 'Componentes',
-        items: [
-          { label: 'Cards', routerLink: '/componentes/cards/templates' },
-          { label: 'Botões', routerLink: '/componentes/botoes/templates' },
-          { label: 'Organograma', routerLink: '/componentes/orgchart' },
-          { label: 'Tables', routerLink: '/componentes/tables/templates' }
-        ]
-      },
-      {
-        label: 'Sobre',
-        items: [{ label: 'A equipe', routerLink: '/sobre/equipe' }]
-      }
-    ];
-
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const savedTheme = localStorage.getItem('theme') || (prefersDark ? 'dark' : 'light');
     this.dark = savedTheme === 'dark';
@@ -39,6 +17,7 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleTheme(): void {
+    this.dark = !this.dark;
     localStorage.setItem('theme', this.dark ? 'dark' : 'light');
     this.applyTheme();
   }
