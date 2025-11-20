@@ -48,13 +48,6 @@ export class HeaderComponent implements OnInit {
       return;
     }
 
-    const themeLink = document.getElementById('app-theme') as HTMLLinkElement | null;
-    if (themeLink) {
-      themeLink.href = this.dark
-        ? 'assets/themes/lara-dark-blue/theme.css'
-        : 'assets/themes/custom-light/theme.css';
-    }
-
     const body = document.body;
     if (body) {
       body.classList.remove('light-theme', 'dark-theme');
