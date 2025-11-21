@@ -38,6 +38,11 @@ body.light-theme {
 body.dark-theme {
   --page-background: var(--page-bg-dark);
   --page-text: var(--page-text-dark);
+  background-color: #1d1d1d;
+}
+
+body.dark-theme p {
+  color: #848c97;
 }
 
 .container {
