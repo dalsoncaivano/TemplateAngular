@@ -13,6 +13,10 @@
   margin-left: 2rem;
 }
 
+:host-context(.dark-theme) .app-title {
+  color: #44547c;
+}
+
 :host ::ng-deep .header-toolbar {
   padding: 0 !important;
   background-color: #000;
@@ -113,6 +117,7 @@
 
 :host ::ng-deep .header-toolbar .p-togglebutton.p-button {
   color: #fff !important;
+  border: none !important;
 }
 
 :host ::ng-deep .header-toolbar .p-togglebutton.p-button .p-button-icon,
@@ -123,6 +128,16 @@
 
 :host ::ng-deep .header-toolbar .p-togglebutton.p-button .pi::before {
   color: inherit !important;
+}
+
+:host-context(.dark-theme)
+  ::ng-deep
+  .header-toolbar
+  .p-togglebutton.p-button.p-togglebutton-checked {
+  --p-togglebutton-checked-background: #1d1d1d;
+  --p-togglebutton-checked-border-color: transparent;
+  background: #1d1d1d !important;
+  border-color: transparent !important;
 }
 
 :host ::ng-deep .header-menubar .p-menuitem.p-highlight > .p-menuitem-content {
