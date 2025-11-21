@@ -1,0 +1,50 @@
+.table-template-page .p-paginator .p-dropdown {
+  height: 2rem !important;
+  min-height: 2rem !important;
+  line-height: 2rem !important;
+  margin-left: 0.5rem !important;
+  margin-right: 0.5rem !important;
+  order: 2;
+  margin: 0;
+}
+
+.table-template-page .p-paginator .p-dropdown .p-dropdown-label {
+  line-height: 2rem !important;
+  padding: 0 0.6rem !important;
+}
+
+.table-template-page .p-paginator .p-dropdown .p-dropdown-trigger {
+  height: 2rem !important;
+  width: 2rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-template-page .p-paginator {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.table-template-page .p-paginator .p-paginator-left-content,
+.table-template-page .p-paginator .p-paginator-right-content {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.table-template-page .p-paginator .p-paginator-pages,
+.table-template-page .p-paginator .p-paginator-first,
+.table-template-page .p-paginator .p-paginator-prev,
+.table-template-page .p-paginator .p-paginator-next,
+.table-template-page .p-paginator .p-paginator-last {
+  order: 1;
+}
+
+body.dark-theme .table-template-page .table-panel {
+  background-color: #000000;
+  border: none;
+}
