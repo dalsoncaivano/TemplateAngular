@@ -1,5 +1,5 @@
 ﻿<div class="container equipe-container">
-  <h2 class="mt-3">Quem somos</h2>
+  <h1 class="mt-3">Quem somos</h1>
 
   <div class="team-content">
     <section class="team-description">
@@ -54,7 +54,9 @@
       </ng-template>
 
       <ng-template pTemplate="title">{{ card.title }}</ng-template>
-      <ng-template pTemplate="subtitle">{{ card.subtitle }}</ng-template>
+      <ng-template pTemplate="subtitle">
+        <h4>{{ card.subtitle }}</h4>
+      </ng-template>
 
       <p>{{ card.description }}</p>
 

@@ -42,18 +42,12 @@
               },
               {
                 "glob": "**/*",
-                "input": "node_modules/primeng/resources/themes",
-                "output": "assets/themes"
-              },
-              {
-                "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
               }
             ],
             "styles": [
               "primeicons/primeicons.css",
-              "src/assets/primeng/primeng.min.css",
               "src/styles.scss"
             ]
           },
@@ -121,18 +115,13 @@
               },
               {
                 "glob": "**/*",
-                "input": "node_modules/primeng/resources/themes",
-                "output": "assets/themes"
-              },
-              {
-                "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
               }
             ],
             "styles": [
               "primeicons/primeicons.css",
-              "src/assets/primeng/primeng.min.css",
+              "@primeuix/styles/primeuix.min.css",
               "src/styles.scss"
             ]
           }

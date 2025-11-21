@@ -3,6 +3,8 @@
 @use "./styles/tables";
 @use "./styles/buttons";
 @use "./styles/card-icon";
+@use "./styles/orgchart";
+@use "./styles/formComplete";
 @use "primeflex/primeflex" as *;
 
 html,
@@ -38,6 +40,22 @@ body.light-theme {
 body.dark-theme {
   --page-background: var(--page-bg-dark);
   --page-text: var(--page-text-dark);
+  background-color: #1d1d1d;
+  --p-togglebutton-checked-background: #1d1d1d;
+  --p-togglebutton-checked-border-color: transparent;
+}
+
+body.dark-theme p {
+  color: #848c97;
+}
+
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme h3,
+body.dark-theme h4,
+body.dark-theme h5,
+body.dark-theme h6 {
+  color: #44547c;
 }
 
 .container {

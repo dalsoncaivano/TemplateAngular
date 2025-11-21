@@ -26,6 +26,10 @@
   font-family: var(--card-font-family);
 }
 
+.p-card-image .p-card-body {
+  --p-card-body-gap: 0;
+}
+
 .p-card-image .p-component,
 .p-card-image .p-card-title,
 .p-card-image .p-card-subtitle,
@@ -38,6 +42,23 @@
 .p-card-image em {
   font-family: var(--card-font-family);
   font-weight: 100;
+}
+
+.p-card-image p {
+  text-align: justify;
+}
+
+.p-card-image .p-card-subtitle {
+  font-style: italic;
+  font-weight: 100;
+  margin: 0;
+}
+
+.p-card-image .p-card-subtitle h4,
+.p-card-image h4 {
+  margin: 0;
+  font-weight: 100;
+  font-style: italic;
 }
 
 .team-cards {
@@ -79,4 +100,33 @@ body.dark-theme .equipe-container .team-card-image .p-card-subtitle,
 body.dark-theme .equipe-container .team-card-image h4 {
   color: #7b8da9;
   font-style: italic;
+}
+
+body.dark-theme .p-card-image .card-hero {
+  filter: brightness(0.7);
+}
+
+body.dark-theme .p-card-image .p-card-body {
+  background-color: #000000;
+}
+
+.team-card-image {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.team-card-image .p-card-body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.team-card-image .p-card-title {
+  margin-bottom: 0;
+}
+
+.team-card-image .linkedin-link {
+  margin-top: auto;
+  align-self: flex-start;
 }

@@ -1,5 +1,7 @@
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
+import { providePrimeNG } from 'primeng/config';
+import Lara from '@primeuix/themes/lara';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -59,7 +61,12 @@ import { CursosComponent } from './features/cursos/cursos.component';
     AppRoutingModule
   ],
   providers: [
-    provideBrowserGlobalErrorListeners()
+    provideBrowserGlobalErrorListeners(),
+    providePrimeNG({
+      theme: {
+        preset: Lara
+      }
+    })
   ],
   bootstrap: [AppComponent]
 })
