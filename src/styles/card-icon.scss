@@ -27,11 +27,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1.5rem;
+  align-items: stretch;
+  gap: 3rem;
   padding: 2rem 1rem 3rem;
 
   @media (min-width: 920px) {
-    justify-content: space-between;
+    justify-content: center;
     padding-left: 4rem;
     padding-right: 4rem;
   }
