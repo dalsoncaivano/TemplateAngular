@@ -28,3 +28,39 @@
   align-items: center;
   justify-content: center;
 }
+
+:host ::ng-deep .table-template-page .p-paginator {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+:host ::ng-deep .table-template-page .p-paginator
+  .p-paginator-left-content,
+:host ::ng-deep .table-template-page .p-paginator
+  .p-paginator-right-content {
+  flex: 1 1 100%;
+  display: flex;
+  justify-content: center;
+}
+
+:host ::ng-deep .table-template-page .p-paginator
+  .p-paginator-pages,
+:host ::ng-deep .table-template-page .p-paginator
+  .p-paginator-first,
+:host ::ng-deep .table-template-page .p-paginator
+  .p-paginator-prev,
+:host ::ng-deep .table-template-page .p-paginator
+  .p-paginator-next,
+:host ::ng-deep .table-template-page .p-paginator
+  .p-paginator-last {
+  order: 1;
+}
+
+:host ::ng-deep .table-template-page .p-paginator
+  .p-dropdown {
+  order: 2;
+  margin: 0;
+}
