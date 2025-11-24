@@ -29,3 +29,8 @@ DB_TIMEZONE=UTC
 3. Execute `./mvnw spring-boot:run` (Linux/macOS) ou `mvnw.cmd spring-boot:run` (Windows).
 
 O endpoint `GET http://localhost:8080/api/health/db` tenta executar `SELECT VERSION()` e retorna o status da conexão com o MySQL.
+
+## Endpoints disponíveis
+
+- `GET /api/health/db`: valida a conectividade com o banco.
+- `GET /api/cursos`: retorna todos os registros da tabela `cursos`, ordenados por nome.
