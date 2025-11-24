@@ -1,59 +1,19 @@
-# LandingPrimeng
+## Centro de Formação – Monorepo
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.10.
+Este repositório agora contém as duas camadas do projeto:
 
-## Development server
+- `frontend/`: aplicativo Angular (LandingPrimeng) com todos os assets, configs e scripts originais.
+- `backend/`: API Spring Boot configurada para acessar o MySQL local usando o pool informado anteriormente.
 
-To start a local development server, run:
+### Como executar
 
-```bash
-ng serve
-```
+1. **Frontend**
+   - `cd frontend`
+   - `npm install` (apenas na primeira vez).
+   - `npm start` para subir `http://localhost:4200/`.
+2. **Backend**
+   - `cd backend`
+   - Configure um `.env` se precisar alterar host/usuário/senha (os valores padrão apontam para MySQL local).
+   - `mvnw.cmd spring-boot:run` (Windows) ou `./mvnw spring-boot:run` (Linux/macOS) para iniciar `http://localhost:8080/`.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Cada pasta possui um README com mais detalhes específicos. Ajuste os dois serviços conforme necessário para integrar Angular ↔ Spring ↔ MySQL.
